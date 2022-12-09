@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bitluck"
+    }
+  },
+  "defaultProject": "bitluck",
+  "cli": {
+    "analytics": "f749cec4-6cad-490f-a8d6-2846c63887ff"
+  }
 }

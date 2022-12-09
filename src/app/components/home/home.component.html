@@ -1,0 +1,42 @@
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="home">B!tLuck</a>
+        <button class="navbar-toggler" type="button" data-ds-target="collapse" aria-controls="#menu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-item active" aria-current="page" href="about">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container latestResult">
+    <div class="text">
+        <label>Result: </label>
+    </div>
+    <div class="row">
+        <div *ngFor="let r of draw" class="results col-lg-12 col-md-12 col-sm-12">
+            <div class="ball">
+                <h5>{{ r }}</h5>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="btn">
+        <button class="btn btn-dark" type="button" (click)="generate()">START</button>
+    </div>
+</div>
+
+<div *ngIf="showFilter" class="container">
+    <app-filter></app-filter>
+</div>
+
+
+
